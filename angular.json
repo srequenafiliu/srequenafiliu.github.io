@@ -26,8 +26,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "bootswatch/dist/custom/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": [
               "bootstrap/dist/js/bootstrap.bundle.min.js"
