@@ -1,23 +1,26 @@
 <!doctype html>
-<html lang="es" data-critters-container>
-
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.29edec07bbfb56e0.css" media="print" onload="this.media='all'"><noscript>
-    <link rel="stylesheet" href="styles.29edec07bbfb56e0.css">
-  </noscript>
-</head>
-
+<link rel="stylesheet" href="styles.29edec07bbfb56e0.css"></head>
 <body>
+  <script>
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <app-root></app-root>
-  <script src="runtime.4780622838e52590.js" type="module"></script>
-  <script src="polyfills.0c6fabbddaa85b8b.js" type="module"></script>
-  <script src="scripts.813213362642cfa0.js" defer></script>
-  <script src="main.9401ce0d152dce08.js" type="module"></script>
-</body>
-
+<script src="runtime.4780622838e52590.js" type="module"></script><script src="polyfills.0c6fabbddaa85b8b.js" type="module"></script><script src="scripts.813213362642cfa0.js" defer></script><script src="main.9401ce0d152dce08.js" type="module"></script></body>
 </html>
