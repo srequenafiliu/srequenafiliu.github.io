@@ -2389,6 +2389,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
+  -webkit-appearance: none;
   appearance: none;
   background-color: #8db3bd;
   border: 0;

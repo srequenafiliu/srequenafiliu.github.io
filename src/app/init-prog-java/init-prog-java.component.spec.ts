@@ -6,12 +6,10 @@ describe('InitProgJavaComponent', () => {
   let component: InitProgJavaComponent;
   let fixture: ComponentFixture<InitProgJavaComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ InitProgJavaComponent ]
-    })
-    .compileComponents();
-
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [InitProgJavaComponent]
+    });
     fixture = TestBed.createComponent(InitProgJavaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
