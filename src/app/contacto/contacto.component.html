@@ -1,0 +1,27 @@
+<div class="container-fluid g-0 my-5">
+  <div class="offset-1 col-10 row g-0">
+    <div class="d-none d-lg-block col-lg-6 text-center my-auto">
+      <img class="w-75 rounded shadow-sm" src="../../assets/foto_profe.jpg" alt="Foto contacto">
+    </div>
+    <div class="col-12 offset-lg-1 col-lg-4 bg-primary rounded-4 shadow-sm fs-5 p-3">
+      <h2 class="text-white fw-bold text-center">Datos de contacto</h2>
+      <div class="my-3">
+        Puedes contactarme a través de los siguientes enlaces:
+      </div>
+      <div class="list-group">
+        <a [href]="dato.link" class="list-group-item list-group-item-action active" target="_blank" *ngFor="let dato of datos_contacto, odd as isOdd">
+          <img [src]="'../../assets/'+dato.src" [alt]="dato.alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{dato.dato}}
+        </a>
+      </div>
+      <div class="my-3">
+        También puedes consultar tanto mi cuenta de GitHub como mi currículum:
+      </div>
+      <div class="list-group">
+        <a [href]="dato.link" class="list-group-item list-group-item-action active" target="_blank" *ngFor="let dato of datos_interes">
+          <img [src]="'../../assets/'+dato.src" [alt]="dato.alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{dato.dato}}
+        </a>
+      </div>
+      <h4 class="text-white fw-bold text-center mt-3">Gracias por visitar mi portfolio</h4>
+    </div>
+  </div>
+</div>

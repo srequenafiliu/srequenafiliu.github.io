@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { InitProgJavaComponent } from './init-prog-java/init-prog-java.component';
+import { SweetstovesComponent } from './sweetstoves/sweetstoves.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    InitProgJavaComponent
+    InitProgJavaComponent,
+    SweetstovesComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

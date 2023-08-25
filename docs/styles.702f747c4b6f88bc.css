@@ -1,7 +1,11 @@
 @charset "UTF-8";
-@import "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"; /*!
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+h2,
+h4 {
+  text-shadow: 5px 5px 10px black;
+} /*!
  * Bootswatch v5.3.1 (https://bootswatch.com)
- * Theme: superhero
+ * Theme: custom
  * Copyright 2012-2023 Thomas Park
  * Licensed under MIT
  * Based on Bootstrap
@@ -93,8 +97,8 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212d30;
   --bs-body-color-rgb: 33, 45, 48;
-  --bs-body-bg: #fafafa;
-  --bs-body-bg-rgb: 250, 250, 250;
+  --bs-body-bg: #f0fcfb;
+  --bs-body-bg-rgb: 240, 252, 251;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 45, 48, 0.75);
@@ -117,9 +121,9 @@
   --bs-border-style: solid;
   --bs-border-color: #ced4da;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0;
-  --bs-border-radius-sm: 0;
-  --bs-border-radius-lg: 0;
+  --bs-border-radius: 0.4rem;
+  --bs-border-radius-sm: 0.3rem;
+  --bs-border-radius-lg: 0.6rem;
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-xxl: 2rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
@@ -397,7 +401,7 @@ kbd {
   font-size: 0.875em;
   color: var(--bs-body-bg);
   background-color: var(--bs-body-color);
-  border-radius: 0;
+  border-radius: 0.3rem;
 }
 kbd kbd {
   padding: 0;
@@ -2346,10 +2350,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fafafa, 0 0 0 0.25rem #8db3bd40;
+  box-shadow: 0 0 0 1px #f0fcfb, 0 0 0 0.25rem #8db3bd40;
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fafafa, 0 0 0 0.25rem #8db3bd40;
+  box-shadow: 0 0 0 1px #f0fcfb, 0 0 0 0.25rem #8db3bd40;
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -5132,7 +5136,7 @@ fieldset:disabled .btn {
   color: var(--bs-btn-close-color);
   background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
   border: 0;
-  border-radius: 0;
+  border-radius: 0.4rem;
   opacity: var(--bs-btn-close-opacity);
 }
 .btn-close:hover {
@@ -6818,7 +6822,7 @@ fieldset:disabled .btn {
 }
 .link-light:focus,
 .link-light:hover {
-  color: RGBA(170, 178, 181, var(--bs-link-opacity, 1)) !important;
+  color: RGBA(206, 212, 218, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(
     170,
     178,

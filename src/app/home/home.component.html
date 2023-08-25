@@ -1,4 +1,45 @@
-<div class="container-fluid g-0 display-6 text-center my-5">
-  Por ahora este sitio está incompleto.
-  Visita mi <a href="https://github.com/srequenafiliu">GitHub</a> para descubrir todos mis proyectos
+<div class="container-fluid g-0 text-center my-5">
+  <div class="mb-5"><img id="presentacion" src="../../assets/presentacion.png" alt="Presentación"></div>
+  <div class="offset-1 col-10 row g-0">
+    <div id="projects" class="offset-lg-1 col-lg-5 order-lg-2 carousel slide carousel-fade mb-5 my-lg-auto" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <!-- <button type="button" data-bs-target="#projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#projects" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#projects" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item" [ngClass]="{'active': isFirst}" *ngFor="let project of projects, first as isFirst">
+          <a class="nav-link" [routerLink]="[project.link]">
+            <img [src]="'../../assets/'+project.src" class="d-block w-100 rounded-4" [alt]="project.titulo">
+            <h5 class="carousel-caption">{{project.titulo}}</h5>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="col-lg-6 bg-primary rounded-4 shadow-sm fs-5 p-3 my-auto">
+      <h2 class="text-white fw-bold">Bienvenid@ a mi portfolio</h2>
+      <div class="my-4">
+        En esta página web podrás consultar los proyectos que he realizado desde que empecé mis
+        andanzas en el mundo de la programación. En cada apartado podrás encontrar una explicación
+        detallada del proyecto, así como un enlace que redirige a una pequeña prueba del código.
+      </div>
+      <div class="mt-4">
+        Además, encontrarás mis <a [routerLink]="['/contacto']" class="link-light">datos de contacto</a>
+        junto con mis redes sociales y mi cuenta de
+        <a href="https://github.com/srequenafiliu" class="link-light" target="_blank">GitHub</a>, donde he
+        guardado todos los proyectos mencionados en este portfolio.
+      </div>
+    </div>
+  </div>
 </div>

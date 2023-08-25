@@ -27,7 +27,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "bootswatch/dist/custom/bootstrap.min.css"
+              "src/bootstrap.min.css"
             ],
             "scripts": [
               "bootstrap/dist/js/bootstrap.bundle.min.js"

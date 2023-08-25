@@ -1,0 +1,10 @@
+#presentacion{
+  width: 75%;
+  @media screen and (max-width:991px) {
+    width: 100%;
+  }
+}
+
+#projects img{
+  filter: brightness(75%);
+}
