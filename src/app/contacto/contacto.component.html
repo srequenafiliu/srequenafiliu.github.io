@@ -9,7 +9,7 @@
         Puedes contactarme a través de los siguientes enlaces:
       </div>
       <div class="list-group">
-        <a [href]="dato.link" class="list-group-item list-group-item-action active" target="_blank" *ngFor="let dato of datos_contacto, odd as isOdd">
+        <a [href]="dato.link" class="list-group-item list-group-item-action active" [attr.target]="dato.alt !== 'Icono Email' ? '_blank' : '_top'" *ngFor="let dato of datos_contacto">
           <img [src]="'../../assets/'+dato.src" [alt]="dato.alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{dato.dato}}
         </a>
       </div>
