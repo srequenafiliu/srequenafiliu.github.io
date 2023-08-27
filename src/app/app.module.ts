@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { InitProgJavaComponent } from './init-prog-java/init-prog-java.component';
 import { SweetstovesComponent } from './sweetstoves/sweetstoves.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { HeaderComponent } from './header/header.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     HomeComponent,
     InitProgJavaComponent,
     SweetstovesComponent,
-    ContactoComponent
+    ContactoComponent,
+    HeaderComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

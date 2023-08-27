@@ -1,4 +1,8 @@
-<div class="container-fluid g-0 display-6 text-center my-5">
-  Por ahora este sitio está incompleto, pero puedes encontrar el código de este repositorio en
-  <a href="https://github.com/srequenafiliu/InitProgJava" target="_blank">GitHub</a>.
+<div class="row g-0">
+  <header [titulo]="titulo" [etiquetas]="etiquetas" [link]="link"></header>
+  <div class="offset-1 col-10 row g-0">
+    <div class="h1 col-12 text-primary text-center my-4">En este repositorio se encuentran dos proyectos:</div>
+    <project-card class="col-lg-4 mb-4" [ngClass]="{'offset-lg-2': isEven, 'offset-lg-1':!isEven}"
+    [titulo]="titulo" [project]="project" *ngFor="let project of projects, even as isEven"></project-card>
+  </div>
 </div>

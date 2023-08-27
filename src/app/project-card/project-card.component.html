@@ -1,0 +1,29 @@
+<div class="card h-100 text-bg-primary">
+  <h2 class="card-header text-center">{{project.titulo}}</h2>
+  <img class="card-img-top object-fit-cover" [src]="'../../assets/'+titulo+'/'+project.titulo+'.png'" [alt]="project.titulo">
+  <div class="card-body d-flex flex-column justify-content-between">
+    <div class="row g-0 card-text">
+      <div class="col-12 fs-5" *ngFor="let parrafo of project.desc">{{parrafo}}</div>
+      <button type="button" [id]="'button'+project.titulo+modal.button" class="col btn btn-light text-secondary mt-2 mx-3"
+      data-bs-toggle="modal" *ngFor="let modal of project.modal"></button>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" [id]="project.titulo+modal.button" data-bs-backdrop="static"
+data-bs-keyboard="false" tabindex="-1" aria-hidden="true" *ngFor="let modal of project.modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4">Antes de acceder a la prueba...</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">{{modal.body}}</div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-secondary" data-bs-dismiss="modal" (click)="goToLink(modal.link)">Ir a la prueba</a>
+      </div>
+    </div>
+  </div>
+</div>

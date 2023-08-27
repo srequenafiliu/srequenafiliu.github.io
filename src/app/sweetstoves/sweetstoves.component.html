@@ -1,17 +1,11 @@
-<div class="container-fluid display-6 text-center my-5">
-  <div>
-    Por ahora este sitio está incompleto, pero puedes encontrar el código de este repositorio en
-    <a href="https://github.com/srequenafiliu/SweetStoves" target="_blank">GitHub</a>.
-  </div>
-  <div>
-    Además, puedes probar el código mediante los siguientes enlaces:
-    <dl class="text-start">
-      <dt>Frontend</dt>
-      <dd><a href="https://sweetstoves.onrender.com/" target="_blank">https://sweetstoves.onrender.com/</a></dd>
-      <dt>Backend (Recetas)</dt>
-      <dd><a href="https://sweetstoves.onrender.com/api/recetas" target="_blank">https://sweetstoves.onrender.com/api/recetas</a></dd>
-      <dt>Backend (Usuarios)</dt>
-      <dd><a href="https://sweetstoves.onrender.com/api/usuarios" target="_blank">https://sweetstoves.onrender.com/api/usuarios</a></dd>
-    </dl>
+<div class="row g-0">
+  <header [titulo]="titulo" [etiquetas]="etiquetas" [link]="link"></header>
+  <div class="offset-1 col-10 row g-0">
+    <div class="h1 col-12 text-primary text-center my-4">
+      SweetStoves es una página web dinámica en la cual se ha utilizado Angular para la parte de front y
+      Spring para la parte de back. Aquí tienes una pequeña explicación de ambas partes:
+    </div>
+    <project-card class="mb-4" [ngClass]="{'col-lg-4': isEven, 'col-lg-6 offset-lg-2':!isEven}" [titulo]="titulo"
+    [project]="project" *ngFor="let project of projects, even as isEven"></project-card>
   </div>
 </div>
