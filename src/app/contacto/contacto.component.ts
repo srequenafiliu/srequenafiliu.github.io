@@ -13,6 +13,6 @@ export class ContactoComponent {
   ];
   datos_interes:{link:string, src:string, alt:string, dato:string}[] = [
     {link:'https://github.com/srequenafiliu', src:'github.png', alt:'Icono GitHub', dato:'srequenafiliu (Sandra)'},
-    {link:'https://srequenafiliu.github.io/assets/curriculum.pdf', src:'cv.png', alt:'Mi CV', dato:'Currículum'}
+    {link:'https://srequenafiliu.github.io/assets/Currículum.pdf', src:'cv.png', alt:'Mi CV', dato:'Currículum'}
   ];
 }
