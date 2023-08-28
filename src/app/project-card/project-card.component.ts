@@ -11,7 +11,6 @@ export class ProjectCardComponent implements AfterViewInit {
   @Input() project!:IProject;
 
   ngAfterViewInit(): void {
-    const carta = document.querySelector(".card");
     if (this.project.modal) {
       for (const modal of this.project.modal){
         const button = document.getElementById("button"+this.project.titulo+modal.button);
