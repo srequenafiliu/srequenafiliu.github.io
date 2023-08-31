@@ -5,7 +5,7 @@
       SweetStoves es una página web dinámica en la cual se ha utilizado Angular para la parte de front y
       Spring para la parte de back. Aquí tienes una pequeña explicación de ambas partes:
     </div>
-    <project-card class="mb-4" [ngClass]="{'col-lg-4': isEven, 'col-lg-6 offset-lg-2':!isEven}" [titulo]="titulo"
+    <project-card class="mb-4 p-3" [ngClass]="{'col-lg-5': isEven, 'col-lg-7':!isEven}" [titulo]="titulo"
     [project]="project" *ngFor="let project of projects, even as isEven"></project-card>
   </div>
 </div>

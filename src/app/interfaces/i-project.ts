@@ -1,7 +1,8 @@
 export interface IProject {
   titulo:string,
-  desc:string[],
-  modal?:IModal[]
+  desc?:string[],
+  modal?:IModal[],
+  link?:string
 }
 
 export interface IModal {

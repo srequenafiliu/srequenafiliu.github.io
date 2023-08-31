@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   projects:{src:string, link:string, titulo:string}[] = [
     {src:'InitProgJava.png', link:'/InitProgJava', titulo:'InitProgJava'},
-    /*{src:'', link:'', titulo:'InitProgWeb'},
-    {src:'', link:'', titulo:'ProyectoBanco'},
+    {src:'InitProgWeb.png', link:'/InitProgWeb', titulo:'InitProgWeb'},
+    /*{src:'', link:'', titulo:'ProyectoBanco'},
     {src:'', link:'', titulo:'FullStackJavaEOI'},
     {src:'', link:'', titulo:'FullStackWebEOI'},*/
     {src:'SweetStoves.png', link:'/SweetStoves', titulo:'SweetStoves'}
   ];
-
 }

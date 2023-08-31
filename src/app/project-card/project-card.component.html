@@ -1,13 +1,19 @@
 <div class="card h-100 text-bg-primary">
   <h2 class="card-header text-center">{{project.titulo}}</h2>
-  <img class="card-img-top object-fit-cover" [src]="'../../assets/'+titulo+'/'+project.titulo+'.png'" [alt]="project.titulo">
-  <div class="card-body">
+  <img class="card-img-top object-fit-cover" [src]="'../../assets/'+titulo+'/'+project.titulo.replace(' ','-')+'.png'"
+  [alt]="project.titulo">
+  <div class="card-body" *ngIf="project.desc">
     <div class="card-text fs-5" *ngFor="let parrafo of project.desc">{{parrafo}}</div>
   </div>
-  <div class="card-footer row g-0" *ngIf="project.modal">
+  <div class="card-footer row g-0" *ngIf="project.modal, else noModal">
     <button type="button" [id]="'button'+project.titulo+modal.button" class="col btn btn-light text-secondary mx-3"
     data-bs-toggle="modal" *ngFor="let modal of project.modal"></button>
   </div>
+  <ng-template #noModal>
+    <div class="card-footer row g-0">
+      <a class="col btn btn-light text-secondary mx-3" [href]="project.link" target="_blank">Ir a la prueba</a>
+    </div>
+  </ng-template>
 </div>
 
 <div class="modal fade" [id]="project.titulo+modal.button" data-bs-backdrop="static"

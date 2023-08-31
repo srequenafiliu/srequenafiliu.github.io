@@ -10,6 +10,7 @@ import { SweetstovesComponent } from './sweetstoves/sweetstoves.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { InitProgWebComponent } from './init-prog-web/init-prog-web.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     SweetstovesComponent,
     ContactoComponent,
     HeaderComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    InitProgWebComponent
   ],
   imports: [
     BrowserModule,
