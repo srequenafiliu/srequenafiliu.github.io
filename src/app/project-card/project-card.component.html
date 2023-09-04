@@ -10,7 +10,7 @@
     data-bs-toggle="modal" *ngFor="let modal of project.modal"></button>
   </div>
   <ng-template #noModal>
-    <div class="card-footer row g-0">
+    <div class="card-footer row g-0" *ngIf="project.link">
       <a class="col btn btn-light text-secondary mx-3" [href]="project.link" target="_blank">Ir a la prueba</a>
     </div>
   </ng-template>

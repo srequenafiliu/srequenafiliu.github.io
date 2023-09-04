@@ -10,8 +10,6 @@ export class InitProgWebComponent {
   titulo = "InitProgWeb";
   etiquetas = ["HTML", "CSS", "TypeScript", "Bootstrap"];
   link = "https://github.com/srequenafiliu/InitProgWeb";
-  modal_body = `Este servicio web está alojado en un servidor gratuito de Render. Por tanto,
-  este servidor se apaga tras pasar 15 minutos sin actividad y puede tardar en encenderse de nuevo.`;
   projects:IProject[] = [
     {titulo:'Arrays', link:"https://initprogweb.onrender.com/arrays.html"},
     {titulo:'Formularios', link:"https://initprogweb.onrender.com/formularios.html"},

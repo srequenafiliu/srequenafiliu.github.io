@@ -18,11 +18,11 @@ import { InitProgWebComponent } from './init-prog-web/init-prog-web.component';
     NavbarComponent,
     HomeComponent,
     InitProgJavaComponent,
+    InitProgWebComponent,
     SweetstovesComponent,
     ContactoComponent,
     HeaderComponent,
-    ProjectCardComponent,
-    InitProgWebComponent
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
