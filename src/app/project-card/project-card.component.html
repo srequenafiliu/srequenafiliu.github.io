@@ -1,6 +1,6 @@
 <div class="card h-100 text-bg-primary">
   <h2 class="card-header text-center">{{project.titulo}}</h2>
-  <img class="card-img-top object-fit-cover" [src]="'../../assets/'+titulo+'/'+project.titulo.replace(' ','-')+'.png'"
+  <img class="card-img-top object-fit-cover" [src]="'assets/'+titulo+'/'+project.titulo.replace(' ','-')+'.png'"
   [alt]="project.titulo">
   <div class="card-body" *ngIf="project.desc">
     <div class="card-text fs-5" *ngFor="let parrafo of project.desc">{{parrafo}}</div>

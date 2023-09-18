@@ -1,7 +1,7 @@
 <div class="container-fluid g-0 text-center my-5">
-  <div class="mb-5"><img id="presentacion" src="../../assets/presentacion.png" alt="Presentación"></div>
+  <div class="mb-5"><img id="presentacion" src="assets/presentacion.png" alt="Presentación"></div>
   <div class="offset-1 col-10 row g-0">
-    <div id="projects" class="offset-lg-1 col-lg-5 order-lg-2 carousel slide mb-5 my-lg-auto" data-bs-ride="carousel">
+    <div id="projects" class="offset-lg-1 col-lg-5 order-lg-2 carousel slide carousel-fade mb-5 my-lg-auto" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -11,26 +11,11 @@
         <button type="button" data-bs-target="#projects" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../../assets/InitProgJava.png" class="d-block w-100 rounded-4" alt="InitProgJava">
-          <!-- <a class="nav-link" [routerLink]="['/InitProgJava']">
-            <img src="../../assets/InitProgJava.png" class="d-block w-100 rounded-4" alt="InitProgJava">
-            <h5 class="carousel-caption">InitProgJava</h5>
-          </a> -->
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/InitProgWeb.png" class="d-block w-100 rounded-4" alt="InitProgWeb">
-          <!-- <a class="nav-link" [routerLink]="['/InitProgWeb']">
-            <img src="../../assets/InitProgWeb.png" class="d-block w-100 rounded-4" alt="InitProgWeb">
-            <h5 class="carousel-caption">InitProgWeb</h5>
-          </a> -->
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/SweetStoves.png" class="d-block w-100 rounded-4" alt="SweetStoves">
-          <!-- <a class="nav-link" [routerLink]="['/SweetStoves']">
-            <img src="../../assets/SweetStoves.png" class="d-block w-100 rounded-4" alt="SweetStoves">
-            <h5 class="carousel-caption">SweetStoves</h5>
-          </a> -->
+        <div class="carousel-item" [ngClass]="{'active': isFirst}" *ngFor="let project of projects, first as isFirst">
+          <a class="nav-link" [routerLink]="[project.link]">
+            <img [src]="'assets/'+project.src" class="d-block w-100 rounded-4" [alt]="project.titulo">
+            <h5 class="carousel-caption">{{project.titulo}}</h5>
+          </a>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">

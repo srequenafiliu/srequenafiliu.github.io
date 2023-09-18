@@ -48,6 +48,7 @@
                 }
               ],
               "outputHashing": "all",
+              "buildOptimizer": false,
               "optimization": {
                 "styles": {
                   "minify": true,
