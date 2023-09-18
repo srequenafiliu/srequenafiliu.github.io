@@ -11,10 +11,26 @@
         <button type="button" data-bs-target="#projects" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item" [ngClass]="{'active': isFirst}" *ngFor="let project of projects, first as isFirst">
-          <a class="nav-link" [routerLink]="[project.link]">
-            <img [src]="'../../assets/'+project.src" class="d-block w-100 rounded-4" [alt]="project.titulo">
-            <h5 class="carousel-caption">{{project.titulo}}</h5>
+        <div class="carousel-item active">
+          <a class="nav-link" [routerLink]="['/InitProgJava']">
+            <img src="../../assets/InitProgJava.png" class="d-block w-100 rounded-4" alt="InitProgJava">
+            <h5 class="carousel-caption">InitProgJava</h5>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <a class="nav-link" [routerLink]="['/InitProgWeb']">
+            <img src="../../assets/InitProgWeb.png" class="d-block w-100 rounded-4" alt="InitProgWeb">
+            <h5 class="carousel-caption">InitProgWeb</h5>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <a class="nav-link" [routerLink]="['/SweetStoves']">
+            <img src="../../assets/SweetStoves.png" class="d-block w-100 rounded-4" alt="SweetStoves">
+            <h5 class="carousel-caption">SweetStoves</h5>
           </a>
         </div>
       </div>
