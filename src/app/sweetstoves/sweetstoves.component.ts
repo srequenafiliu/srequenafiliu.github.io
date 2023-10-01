@@ -17,7 +17,7 @@ export class SweetstovesComponent {
     Los usuarios, registrados previamente en el menú de registro, pueden añadir nuevas recetas, actualizarlas, modificar sus
     datos de usuario y borrar tanto una de sus recetas como su cuenta.`, `Para realizar todas estas acciones, está web se conecta
     a la API creada en la parte de Back mediante tres servicios: recetas, usuarios y auth. Este último maneja el registro,
-    el inicio de sesión y el cambio de contraseña del del usuario.`], modal:[
+    el inicio de sesión y el cambio de contraseña del usuario.`], modal:[
       {button:"", body:this.modal_body, link:"https://sweetstoves.onrender.com/"}
     ]},
     {titulo:'Backend', desc:[`Proyecto Spring conectado a una base de datos PostgreSQL que genera una API

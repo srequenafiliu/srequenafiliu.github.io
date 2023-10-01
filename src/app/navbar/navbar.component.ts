@@ -11,9 +11,10 @@ export class NavbarComponent {
     {link:'/inicio', titulo:'Inicio'},
     {link:'/InitProgJava', titulo:'InitProgJava'},
     {link:'/InitProgWeb', titulo:'InitProgWeb'},
-    /*{link:'', titulo:'ProyectoBanco'},
+    /*{link:'/WDBank', titulo:'WDBank'},
     {link:'', titulo:'FullStackJavaEOI'},
     {link:'', titulo:'FullStackWebEOI'},*/
-    {link:'/SweetStoves', titulo:'SweetStoves'}
+    {link:'/SweetStoves', titulo:'SweetStoves'},
+    {link:'/Ele-Task', titulo:'Ele-Task'}
   ];
 }

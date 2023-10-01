@@ -1,0 +1,11 @@
+<div class="row g-0">
+  <header [titulo]="titulo" [etiquetas]="etiquetas" [link]="link"></header>
+  <div class="offset-1 col-10 row g-0">
+    <div class="h1 col-12 text-primary text-center my-4">
+      Ele-Task es una página web dinámica en la cual se ha utilizado Angular para la parte de front y
+      Flask para la parte de back. Aquí tienes una pequeña explicación de ambas partes:
+    </div>
+    <project-card class="col-lg-5 mb-4" [ngClass]="{'offset-lg-2':!isEven}" [titulo]="titulo"
+    [project]="project" *ngFor="let project of projects, even as isEven"></project-card>
+  </div>
+</div>

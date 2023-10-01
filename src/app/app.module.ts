@@ -11,6 +11,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { InitProgWebComponent } from './init-prog-web/init-prog-web.component';
+import { EletaskComponent } from './eletask/eletask.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InitProgWebComponent } from './init-prog-web/init-prog-web.component';
     SweetstovesComponent,
     ContactoComponent,
     HeaderComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    EletaskComponent
   ],
   imports: [
     BrowserModule,
