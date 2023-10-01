@@ -23,8 +23,8 @@ export class EletaskComponent {
     ]},
     {titulo:'Backend', desc:[`Proyecto Flask conectado a una base de datos MySQL que genera una API
     donde se puede consultar la información tanto de tareas como de usuarios y permite realizar el CRUD de ambos.`,
-    `Los controladores Rest presentes en este proyecto son tres: tareas, usuarios y auth. Este último se encarga de
-    los métodos de registro, inicio de sesión y cambio de contraseña.`],
+    `Las rutas principales de esta API son tres: tareas, usuarios y auth. Esta última se encarga de los métodos
+    de registro, inicio de sesión y cambio de contraseña.`],
     modal:[
       {button:"", body:this.modal_body_back, link:"https://ele-task.srequenafiliu.repl.co/"}
     ]}
