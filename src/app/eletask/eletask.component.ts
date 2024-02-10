@@ -12,7 +12,8 @@ export class EletaskComponent {
   link = "https://github.com/srequenafiliu/Ele-Task";
   modal_body_front = `Puede que al principio no pueda ver ni la lista de usuarios ni su cuenta. Eso se debe a que el servidor
   se está encendiendo, por lo que se debe refrescar la página para que aparezcan los datos.`;
-  modal_body_back = `Para esta prueba se ha cambiado la base de datos MySQL por una base de datos SQLite almacenada en Replit.`;
+  modal_body_back = `Para esta prueba se ha cambiado la base de datos MySQL por una base de datos SQLite almacenada en Replit.
+  Si aparece el mensaje "The Repl is currently not running", accede antes a la prueba del front para arrancar el servidor.`;
   projects:IProject[] = [
     {titulo:'Frontend', desc:[`Aplicación web en la cual los usuarios registrados pueden añadir tareas y hacer un seguimiento
     de estas. Las tareas solo podrán ser vistas y manipuladas por sus creadores para aumentar así la seguridad de esta app.`,
