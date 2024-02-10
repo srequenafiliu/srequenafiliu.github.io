@@ -26,7 +26,7 @@ export class EletaskComponent {
     `Las rutas principales de esta API son tres: tareas, usuarios y auth. Esta última se encarga de los métodos
     de registro, inicio de sesión y cambio de contraseña.`],
     modal:[
-      {button:"", body:this.modal_body_back, link:"https://ele-task.srequenafiliu.repl.co/"}
+      {button:"", body:this.modal_body_back, link:"https://00b647c9-a978-4a64-a545-cbeca93d8a43-00-2e7u5s8ms9hz4.spock.replit.dev/"}
     ]}
   ];
 }
